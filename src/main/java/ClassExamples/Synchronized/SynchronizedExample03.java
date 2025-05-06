@@ -34,9 +34,16 @@ public class SynchronizedExample03 {
 
     public static void SetObject2(Object o)
     {
+        //... Not Locked
+
+
+        //... Not Locked
         synchronized (SynchronizedExample03.class)
         {
             staticObject = o;
         }
+        //...
+
+        //...
     }
 }
