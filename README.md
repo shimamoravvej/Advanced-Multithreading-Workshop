@@ -113,6 +113,7 @@ You should complete the following classes, located in `Workshop` folder.
 - [ ]  Test that both threads run to completion without getting stuck (no deadlock).
 
 ## `TaylorSeries`
+- [ ] Search for the Taylor series of sin(x).
 - [ ] Read this article to get to know BigDecimal in Java [Mastering Big Decimals in Java](https://solutionsarchitecture.medium.com/mastering-big-decimals-in-java-understanding-implementation-performance-and-alternatives-7e3a3a96efc6#:~:text=What%20is%20Big%20Decimal%3F,any%20desired%20level%20of%20accuracy.)
 - [ ] Implement the `factorial(int n)` method using `BigDecimal`.
 - [ ] In the `run()` method, calculate the n-th term of the Taylor series for `sin(x)`:
