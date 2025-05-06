@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a62a549a-464e-41a9-b0a9-5bcb230cce37" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/LocksAndDeadlocks/DeadlockExample01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/LocksAndDeadlocks/LockExample01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/LocksAndDeadlocks/LockExample02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/LocksAndDeadlocks/LockExample03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/LocksAndDeadlocks/LockExample04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/RaceCondition/UnhandledRaceCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/Synchronized/SynchronizedExample01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/Synchronized/SynchronizedExample02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/Synchronized/SynchronizedExample03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ArraySum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ProducerConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ThreadPoolAndExecutorServices/PoolThreadRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ThreadPoolAndExecutorServices/ThreadPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ThreadPoolAndExecutorServices/ThreadPoolImplementationExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ThreadPoolExample01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ThreadPoolExample02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClassExamples/ThreadPool/ThreadPoolExample03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Workshop/DeadlockPrevention/DeadlockPreventionWorkshop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Workshop/HandlingRaceConditions/LockWorkshop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Workshop/HandlingRaceConditions/SynchronizedWorkshop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Workshop/ThreadPool/TaylorSeries.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2wXTSzp03m7Xc4ucG2l8E3qY2q5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Advanced-Multithreading-Workshop [:ArraySum.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:BasicExecutorService.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:CalculatingExp.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:Calculator.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:CounterLock.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:Deadlock.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:DeadlockExample01.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:Example04.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:Exec1.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:Lock2.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:LockExample01.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:LockExample02.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:LockWorkshop.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:Main.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:MonteCarloPi.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:MonteCarloPiThreadPoolPi.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:SemaphoreExample.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:SomeLock.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:SynchronizedExample.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:SynchronizedExample02.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:SynchronizedExchangeerMain.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:SynchronizedWorkshop.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:TaylorSeries.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:Thrd3.main()].executor": "Run",
+    "Gradle.Advanced-Multithreading-Workshop [:UnhandledRaceCondition.main()].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/University/Term04/AP_TA/Assignments/Advanced-Multithreading-Workshop",
+    "onboarding.tips.debug.path": "E:/University/Term04/AP_TA/Assignments/Advanced-Multithreading-Workshop/src/main/java/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Workshop.Deadlock" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="CounterLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassExamples.LocksAndDeadlocks.CounterLock" />
+      <module name="Advanced-Multithreading-Workshop.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ClassExamples.Semaphore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LockExample02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassExamples.LocksAndDeadlocks.LockExample02" />
+      <module name="Advanced-Multithreading-Workshop.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ClassExamples.Semaphore.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedExchangeerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClassExamples.Synchronized.SynchronizedExchangeerMain" />
+      <module name="Advanced-Multithreading-Workshop.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ClassExamples.Synchronized.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedWorkshop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Workshop.HandlingRaceConditions.SynchronizedWorkshop" />
+      <module name="Advanced-Multithreading-Workshop.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Workshop.HandlingRaceConditions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UnhandledRaceCondition" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RaceCondition.UnhandledRaceCondition" />
+      <module name="Advanced-Multithreading-Workshop.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RaceCondition.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LockExample02" />
+        <item itemvalue="Application.SynchronizedWorkshop" />
+        <item itemvalue="Application.CounterLock" />
+        <item itemvalue="Application.SynchronizedExchangeerMain" />
+        <item itemvalue="Application.UnhandledRaceCondition" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a62a549a-464e-41a9-b0a9-5bcb230cce37" name="Changes" comment="" />
+      <created>1746186922695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1746186922695</updated>
+    </task>
+    <servers />
+  </component>
+</project>
