@@ -39,8 +39,8 @@ public class TaylorSeries {
         BigDecimal x = new BigDecimal("0.01");
 
         for (int i = 0; i < 100; i++) {
-            CalculateSin task = new CalculateSin(x, i);
-            threadPool.execute(task);
+            //TODO: create a CalculateSin for the i-th term
+            //TODO: execute it using executor service
         }
 
         threadPool.shutdown();
