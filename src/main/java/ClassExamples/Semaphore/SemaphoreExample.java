@@ -12,7 +12,7 @@ public class SemaphoreExample {
 
             Task(int id) {
                 this.id = id;
-            }
+            }   
 
             @Override
             public void run() {

@@ -5,12 +5,22 @@ public class SynchronizedExample01 {
         public void printCount() {
             try {
                 for(int i = 5; i > 0; i--) {
-                    System.out.println("Counter   ---   "  + i + " (" + Thread.currentThread().getName() +"\b)" );
+                Thread.sleep(1000);
+                    System.out.println("Counter   ---   "  + i + " (" + Thread.currentThread().getName() +")" );
                 }
             } catch (Exception e) {
                 System.out.println("Thread  interrupted.");
             }
         }
+       public void printCount2() {
+           try {
+               for(int i = 10; i > 5; i--) {
+                   System.out.println("Counter   ---   "  + i + " (" + Thread.currentThread().getName() +")" );
+               }
+           } catch (Exception e) {
+               System.out.println("Thread  interrupted.");
+           }
+       }
     }
 
     static class ThreadDemo extends Thread {
@@ -40,10 +50,10 @@ public class SynchronizedExample01 {
         }
     }
 
-        public static void main(String args[]) {
+
+        public static void main(String args[]) throws InterruptedException {
 
             PrintDemo PD = new PrintDemo();
-
             ThreadDemo T1 = new ThreadDemo("Thread - 1 ", PD);
             ThreadDemo T2 = new ThreadDemo("Thread - 2 ", PD);
 

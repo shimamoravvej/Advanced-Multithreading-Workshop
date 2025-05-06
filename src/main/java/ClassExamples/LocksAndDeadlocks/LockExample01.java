@@ -13,7 +13,7 @@ public class LockExample01 {
         @Override
         public void run() {
             try {
-                lock.lock();
+                //TODO:add lock
                 //critical section
                 System.out.println("Hi");
                 Thread.sleep(5000);
@@ -21,7 +21,7 @@ public class LockExample01 {
 
             }
             finally {
-                lock.unlock();
+                //TODO: unlock the lock
             }
         }
     }

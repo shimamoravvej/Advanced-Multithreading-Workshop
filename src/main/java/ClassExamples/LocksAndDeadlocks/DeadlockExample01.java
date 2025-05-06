@@ -36,7 +36,7 @@ public class DeadlockExample01 {
             Resource resB = new Resource(2, "ResourceB");
 
             Thread t1 = new Thread(() -> useResources(resA, resB), "Thread 1");
-            Thread t2 = new Thread(() -> useResources(resB, resA), "Thread 2"); // opposite order → possible deadlock
+            Thread t2 = new Thread(() -> useResources(resB, resA), "Thread 2");
 
             t1.start();
             t2.start();

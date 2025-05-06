@@ -2,54 +2,56 @@ package ClassExamples.ThreadPool;
 import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.*;
-
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 public class ThreadPoolExample03 {
-        // Math context with high precision
         private static final MathContext MC = new MathContext(30, RoundingMode.HALF_UP);
+        private static BigDecimal sum = BigDecimal.ZERO;
 
-        // Compute exp(x) using Taylor Series
-        private static BigDecimal exp(BigDecimal x, int terms) {
-            BigDecimal sum = BigDecimal.ONE;  // term 0
-            BigDecimal term = BigDecimal.ONE;
-
-            for (int n = 1; n < terms; n++) {
-                term = term.multiply(x, MC).divide(BigDecimal.valueOf(n), MC);
-                sum = sum.add(term, MC);
-            }
-
-            return sum;
+        public static synchronized void add(BigDecimal value) {
+            sum = sum.add(value, MC);
         }
 
-        public static void main(String[] args) throws InterruptedException, ExecutionException {
-            ExecutorService executor = Executors.newFixedThreadPool(4); // 4 threads
+        public static synchronized BigDecimal get() {
+            return sum;
+        }
+        public static void main(String[] args) throws InterruptedException {
+            ExecutorService executor = Executors.newFixedThreadPool(4);
 
-            // Input values to compute exp(x)
-            List<BigDecimal> inputs = List.of(
-                    new BigDecimal("1"),
-                    new BigDecimal("2"),
-                    new BigDecimal("5"),
-                    new BigDecimal("10")
-            );
+            BigDecimal x = new BigDecimal("1");
+            int terms = 50;
 
-            int terms = 50; // Number of terms in Taylor Series
-
-            // Submit computation tasks
-            List<Future<BigDecimal>> results = new ArrayList<>();
-            for (BigDecimal x : inputs) {
-                Callable<BigDecimal> task = () -> exp(x, terms);
-                results.add(executor.submit(task));
-            }
-
-            // Print results
-            for (int i = 0; i < inputs.size(); i++) {
-                BigDecimal x = inputs.get(i);
-                BigDecimal result = results.get(i).get(); // wait for completion
-                System.out.println("exp(" + x + ") = " + result);
+            for (int n = 0; n < terms; n++) {
+                final int termIndex = n;
+                executor.execute(() -> {
+                    BigDecimal term = computeTerm(x, termIndex);
+                    add(term);
+                });
             }
 
             executor.shutdown();
+            while (!executor.isTerminated()) {
+                Thread.sleep(50);
+            }
+
+            System.out.println("exp(" + x + ") = " + get());
         }
-}
+
+        // Compute single term: x^n / n!
+        private static BigDecimal computeTerm(BigDecimal x, int n) {
+            if (n == 0) return BigDecimal.ONE;
+
+            BigDecimal numerator = BigDecimal.ONE;
+            for (int i = 0; i < n; i++) {
+                numerator = numerator.multiply(x, MC);
+            }
+
+            BigDecimal denominator = BigDecimal.ONE;
+            for (int i = 2; i <= n; i++) {
+                denominator = denominator.multiply(BigDecimal.valueOf(i), MC);
+            }
+
+            return numerator.divide(denominator, MC);
+        }
+
+    }
