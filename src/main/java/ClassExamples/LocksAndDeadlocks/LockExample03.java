@@ -4,6 +4,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class LockExample03 {
+    //Reference: https://www.youtube.com/watch?v=MWlqrLiscjQ&ab_channel=JakobJenkov
     public static void main(String[] args) throws InterruptedException {
         LockExample03 lockExample03 = new LockExample03();
 
@@ -94,6 +95,5 @@ public class LockExample03 {
             lock.unlock();
         }
     }
-
 
 }
