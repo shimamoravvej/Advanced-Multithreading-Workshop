@@ -24,9 +24,9 @@ public class SynchronizedExample02 {
             }
     }
     public static void main(String args[]) {
-        Thread thread1 = new Thread(new MyRunnable(1));
+        Thread thread1 = new Thread(new MyRunnable(3));
         Thread thread2 = new Thread(new MyRunnable(5));
-        Thread thread3 = new Thread(new MyRunnable(9));
+        Thread thread3 = new Thread(new MyRunnable(7));
 
         thread1.start();
         thread2.start();
