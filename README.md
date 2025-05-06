@@ -20,7 +20,7 @@ If you don’t have Gradle installed locally, you can either:
 # Class Examples
 
 ## Race Condition Example
-
+### Learning Goals
 - **Understand the concept of race conditions in multithreaded programming.**
     - A race condition occurs when multiple threads try to access and modify shared data concurrently, and the final outcome depends on the timing of thread execution.
 
@@ -45,7 +45,7 @@ If you don’t have Gradle installed locally, you can either:
 - **Practice inspecting lock state using methods like `isLocked()`, `getHoldCount()`, and `isHeldByCurrentThread()`.**
 
 ## Deadlock Example
-
+### Learning Goals
 - **Understand the concept of deadlock in multithreaded programming.**
 
 - **Learn how holding one lock and waiting for another can result in a deadlock situation.**
@@ -54,7 +54,7 @@ If you don’t have Gradle installed locally, you can either:
 
 
 ## `synchronized` Examples
-
+### Learning Goals
 - **Understand the concept of synchronization in multithreading:**
 
     - The `synchronized` keyword is used to prevent multiple threads from accessing the same critical section of code at the same time, which ensures thread safety and prevents race conditions.
@@ -79,7 +79,7 @@ If you don’t have Gradle installed locally, you can either:
     - Instance-level synchronization is applied using `this` (the instance object), whereas class-level synchronization is applied using the class itself (`TheClass.class`).
 
 ## Semaphore Example
-
+### Learning Goals
 - **Understand the concept of semaphores and how they control access to shared resources:**
 
     - The example demonstrates how semaphores are used to limit the number of threads accessing a shared resource. In this case, the semaphore is initialized with 2 permits, allowing at most 2 threads to enter the critical section simultaneously.
