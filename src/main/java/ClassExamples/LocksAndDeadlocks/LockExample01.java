@@ -6,22 +6,24 @@ public class LockExample01 {
     public static class MyRunnable implements Runnable
     {
         private final Lock lock;
-        public MyRunnable(Lock lock)
-        {
+
+        public MyRunnable(Lock lock) {
+
             this.lock = lock;
         }
+
         @Override
         public void run() {
             try {
-                //TODO:add lock
                 //critical section
+                lock.lock();
                 System.out.println("Hi");
                 Thread.sleep(5000);
             } catch (InterruptedException ignored) {
 
             }
             finally {
-                //TODO: unlock the lock
+                lock.unlock();
             }
         }
     }
