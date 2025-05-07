@@ -19,14 +19,26 @@ public class TaylorSeries {
 
         @Override
         public void run() {
-            // TODO: Calculate the n-th term of the Taylor series for sin(x)
-            // TODO: Add the term to the global sum (ensure thread-safety)
+            BigDecimal sign =new BigDecimal(1);
+            if(n%2==1){
+                sign = new BigDecimal(-1);
+            }
+            BigDecimal numerator = x.pow(2*n+1);
+            numerator = numerator .multiply(sign, mc);
+            BigDecimal denominator = factorial(2*n+1);
+            BigDecimal result = numerator.divide(denominator, mc);
+            synchronized (TaylorSeries.class) {
+                sum = sum.add(result, mc);
+            }
+
         }
 
-
-        // TODO: Implement factorial(n) using BigDecimal
         public BigDecimal factorial(int n){
-            return new BigDecimal(0);
+            BigDecimal temp = new BigDecimal(1);
+            for (int i = 1 ; i <= n ; i++){
+                temp = temp.multiply(new BigDecimal(i), mc);
+            }
+            return temp;
         }
     }
     public static BigDecimal sum;
@@ -39,8 +51,8 @@ public class TaylorSeries {
         BigDecimal x = new BigDecimal("0.01");
 
         for (int i = 0; i < 100; i++) {
-            //TODO: create a CalculateSin for the i-th term
-            //TODO: execute it using executor service
+            CalculateSin task = new CalculateSin(x, i);
+            threadPool.execute(task);
         }
 
         threadPool.shutdown();

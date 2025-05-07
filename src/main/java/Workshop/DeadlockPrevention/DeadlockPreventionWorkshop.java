@@ -19,7 +19,6 @@ public class DeadlockPreventionWorkshop {
         }
     }
     public static void useResources(Resource r1, Resource r2) {
-        //TODO: prevent deadlock
         //HINT: if you make sure that all locks are always taken in the same order by any thread, deadlocks cannot occur
         System.out.println(Thread.currentThread().getName() + " is attempting to lock " + r1.getName());
         synchronized (r1) {
